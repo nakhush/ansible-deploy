@@ -3,6 +3,10 @@
   hosts: ubuntu
   become: yes
 
+  vars:
+    source_file: 
+    destination_file: /var/www/html
+
   tasks:
   - name: Update packages 
     apt:
