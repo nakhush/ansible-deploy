@@ -4,22 +4,22 @@
   become: yes
 
   vars:
-    source_file: 
+    source_file: /home/nakhush/ansible-deploy-01/index.html
     destination_file: /var/www/html
 
   tasks:
-  - name: Update packages 
-    apt:
-      update_cache: yes
-      upgrade: yes
+  #- name: Update packages 
+  #  apt:
+   #   update_cache: yes
+   #   upgrade: yes
   
-  - name: Install Apache WebServer
-    apt: name=apache2 state=latest
+  #- name: Install Apache WebServer
+  #  apt: name=apache2 state=latest
 
-  #- name: Copy Web Page to destination directory
+  - name: Copy Web Page to destination directory
+    copy: src=/home/nakhush/ansible-deploy-01/index.html dest=/var/www/html mode=0555
 
-
-  - name: Started and enabled Apache
-    service: name=apache2 state=started enabled=yes
+  #- name: Started and enabled Apache
+  #  service: name=apache2 state=started enabled=yes
     
 ...
