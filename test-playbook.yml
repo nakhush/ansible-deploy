@@ -1,0 +1,9 @@
+---
+- name: ping host
+  hosts: ubuntu
+  become: yes
+
+  tasks:
+  - name: Ping host
+    ping:
+...
