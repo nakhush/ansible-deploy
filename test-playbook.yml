@@ -4,7 +4,7 @@
   become: yes
 
   tasks:
-  - name: Update packages and 
+  - name: Update packages 
     apt:
       update_cache: yes
       upgrade: yes
@@ -16,6 +16,6 @@
 
 
   - name: Started and enabled Apache
-    service: name=apache2 state:started enabled=yes
+    service: name=apache2 state=started enabled=yes
     
 ...
