@@ -13,14 +13,14 @@
       update_cache: True
       upgrade: True
   
-  #- name: Install Apache WebServer
-  #  apt: name=apache2 state=latest
+  - name: Install Apache WebServer
+    apt: name=apache2 state=latest
 
   - name: Copy Web Page to destination directory
     copy: src={{ source_dir }} dest={{ destin_dir }} mode=0555
 
-  #- name: Started and enabled Apache
-  #  service: name=apache2 state=started enabled=yes
+  - name: Started and enabled Apache
+    service: name=apache2 state=started enabled=yes
     
   - shell: service apache2 status
     register: apache2_status
@@ -29,9 +29,4 @@
 
   - name: Generate index.html
     template: src={{ source_dir }}/index.j2 dest={{ destin_dir }}/index.html mode=0555
-  
-  
-
-
-    
 ...
