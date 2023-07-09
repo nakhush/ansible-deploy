@@ -19,6 +19,7 @@
     IP Address of this server is: {{ ansible_default_ipv4.address }}<br>
     Server distibution is: {{ ansible_distribution }}<br>
     Server versoin of distibution is:{{ ansible_lsb["description"] }}<br>
+    Server Vendor information: {{ ansible_board_vendor, ansible_board_version, ansible_chassis_version}}
   </div>
 </body>
 </html>
