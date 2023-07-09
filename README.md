@@ -6,7 +6,7 @@
 
 1. Подготовка окружения: установка необходимых зависимостей и конфигурация системы.
 Для рассматриваемого примера была поднята Виртуальная машина в [Yandex Compute Cloud](https://cloud.yandex.ru/docs/compute/) на базе Ubuntu версии 20.04.
-
+![pic](Untitled.png)
 2. Сформированы конфигурационные файлы: в ansible.cfg hosts.ini, ./group_vars
 
 3. Компиляция шаблона и написание сценария Ansible: с использованием движка шаблонов [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/) заполнен index.j2,
