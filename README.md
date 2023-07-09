@@ -1,4 +1,4 @@
-![j2](./logos/pocoo_jinja-icon.svg) ![apache](./logos/apache-svgrepo-com.svg) ![ansible](./logos/ansible-svgrepo-com.svg)
+![j2](./logos/pocoo_jinja-icon.svg) ![apache](./logos/apache-svgrepo-com.svg) ![ansible](./logos/ansible-svgrepo-com(1).png)
 # Деплой файла index.j2 на веб-сервер
 Данный проект представляет собой автоматизированный процесс развертывания файла index.j2 на веб-сервере. 
 index.j2 является шаблоном веб-страницы, который содержит динамические данные, подставляемые в соответствующие места при генерации конечного файла index.html.
