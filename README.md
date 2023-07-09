@@ -1,4 +1,4 @@
-![display:block;margin:auto|](./logos/pocoo_jinja-ar210.svg.png) ![display:block;margin:auto|](./logos/Apache_HTTP_server_logo_(2019-present).svg.png) ![display:block;margin:auto|](./logos/ansible-ar21.png)
+<center>![display:block;margin:auto|](./logos/pocoo_jinja-ar210.svg.png) ![display:block;margin:auto|](./logos/Apache_HTTP_server_logo_(2019-present).svg.png) ![display:block;margin:auto|](./logos/ansible-ar21.png)</center>
 # Деплой файла index.j2 на веб-сервер
 Данный проект представляет собой автоматизированный процесс развертывания файла index.j2 на веб-сервере. 
 index.j2 является шаблоном веб-страницы, который содержит динамические данные, подставляемые в соответствующие места при генерации конечного файла index.html.
