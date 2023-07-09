@@ -1,25 +1,28 @@
 ---
-- name: ping host
+- name: Install, start and enabled Apache, Upload webpage to server
   hosts: ubuntu
   become: yes
 
   vars:
-    source_file: /home/nakhush/ansible-deploy-01/index.html
-    destination_file: /var/www/html
+    source_dir: ./webpage/
+    destin_dir: /var/www/html/
 
   tasks:
-  #- name: Update packages 
-  #  apt:
-   #   update_cache: yes
-   #   upgrade: yes
+  - name: Update packages 
+    apt:
+      update_cache: yes
+      upgrade: yes
   
-  #- name: Install Apache WebServer
-  #  apt: name=apache2 state=latest
+  - name: Install Apache WebServer
+    apt: name=apache2 state=latest
 
   - name: Copy Web Page to destination directory
-    copy: src=/home/nakhush/ansible-deploy-01/index.html dest=/var/www/html mode=0555
+    copy: src={{ source_dir }} dest={{ destin_dir }} mode=0555
 
-  #- name: Started and enabled Apache
-  #  service: name=apache2 state=started enabled=yes
+  - name: Generate index.html
+    template: src={{ source_dir }}/index.j2 dest={{ destin_dir }}/index.html mode=0555
+  
+  - name: Started and enabled Apache
+    service: name=apache2 state=started enabled=yes
     
 ...
