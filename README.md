@@ -1,4 +1,4 @@
-![j2](https://jinja.palletsprojects.com/en/3.1.x/_images/jinja-logo.png) ![apache](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Apache_HTTP_server_logo_%282019-present%29.svg/480px-Apache_HTTP_server_logo_%282019-present%29.svg.png?20220805205621) ![ansible](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/256px-Ansible_logo.svg.png?20210414073712)
+![j2](https://jinja.palletsprojects.com/en/3.1.x/_images/jinja-logo.png) ![apache](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Apache_HTTP_server_logo_%282019-present%29.svg/320px-Apache_HTTP_server_logo_%282019-present%29.svg.png) ![ansible](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/195px-Ansible_logo.svg.png)
 # Деплой файла index.j2 на веб-сервер
 Данный проект представляет собой автоматизированный процесс развертывания файла index.j2 на веб-сервере. 
 index.j2 является шаблоном веб-страницы, который содержит динамические данные, подставляемые в соответствующие места при генерации конечного файла index.html.
