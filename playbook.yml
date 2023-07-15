@@ -21,12 +21,4 @@
 
   - name: Started and enabled Apache
     service: name=apache2 state=started enabled=yes
-    
-  - shell: service apache2 status
-    register: apache2_status
-  
-  - debug: var=apache2_status.stdout_lines
-
-  - name: Generate index.html
-    template: src={{ source_dir }}/index.j2 dest={{ destin_dir }}/index.html mode=0555
 ...
