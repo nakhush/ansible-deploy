@@ -1,5 +1,5 @@
 ---
-ansible_user: user
-ansible_ssh_private_key_file: /home/nakhush/.ssh/id_rsa
+ansible_user: user2
+ansible_ssh_private_key_file: /var/lib/jenkins/.ssh/id_rsa
 owner: Malik Nakhushev
 ...
